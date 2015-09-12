@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="bear">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="splitz.js"></script>
+<link rel="stylesheet" type="text/css" href="splitz.css">
+	<title>Splitz</title>
+</head>
+<body ng-controller="polarbearcontroller">
+  <p>Each person enters one item's price per field and chooses a color.  If Person A has two items, he would enter the price and select red, and then enter the other price and select red again.  One color per person.</p>
+<div>
+
+  <div ng-repeat="price in prices">
+  Price:<input type="text" ng-model="price.amt">
+  <br>
+  <br>
+  </div>
+  
+
+  <div ng-click="Show()">Add Another Price
+  </div>
+ 
+  Total Tax:<input type="text" ng-model="tax"><br>
+  <input ng-click="Submit()"  value="Submit">
+
+</div>
+
+<div>The total is {{total | currency}}</div>
+
+
+</body>
+</html>
+
