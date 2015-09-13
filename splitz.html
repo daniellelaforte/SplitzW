@@ -12,14 +12,14 @@
 
   <div ng-repeat="price in prices">
   Price:<input type="text" ng-model="price.amt">
-            <div class="littleredbox" ng-class="menured($index)" ng-click="clickLittle($index, 'red')"></div>
-            <div class="littleorangebox"  ng-class="menuorange($index)" ng-click="clickLittle($index, 'orange')"></div>
-            <div class="littleyellowbox" ng-class="menuyellow($index)" ng-click="clickLittle($index, 'yellow')"></div>
-            <div class="littlegreenbox"  ng-class="menugreen($index)" ng-click="clickLittle($index, 'green')"></div>
-            <div class="littlebluebox"  ng-class="menublue($index)" ng-click="clickLittle($index, 'blue')"></div>
-            <div class="littlepurplebox"  ng-class="menupurple($index)" ng-click="clickLittle($index, 'purple')"></div>
-            <div class="littleblackbox"  ng-class="menublack($index)" ng-click="clickLittle($index, 'black')"></div>
-            <div class="littleskybluebox"  ng-class="menuskyblue($index)" ng-click="clickLittle($index, 'skyblue')"></div>
+            <div class="littleredbox" ng-class="menured($index)" ng-click="clickRed($index, 'red')"></div>
+            <div class="littleorangebox"  ng-class="menuorange($index)" ng-click="clickOrange($index, 'orange')"></div>
+            <div class="littleyellowbox" ng-class="menuyellow($index)" ng-click="clickYellow($index, 'yellow')"></div>
+            <div class="littlegreenbox"  ng-class="menugreen($index)" ng-click="clickGreen($index, 'green')"></div>
+            <div class="littlebluebox"  ng-class="menublue($index)" ng-click="clickBlue($index, 'blue')"></div>
+            <div class="littlepurplebox"  ng-class="menupurple($index)" ng-click="clickPurple($index, 'purple')"></div>
+            <div class="littleblackbox"  ng-class="menublack($index)" ng-click="clickBlack($index, 'black')"></div>
+            <div class="littleskybluebox"  ng-class="menuskyblue($index)" ng-click="clickSkyblue($index, 'skyblue')"></div>
           
          
 
@@ -36,14 +36,14 @@
 
 </div>
 
-<div>The total is {{redtotal | currency}}</div>
-<div>The total is {{orangetotal | currency}}</div>
-<div>The total is {{yellowtotal | currency}}</div>
-<div>The total is {{greentotal | currency}}</div>
-<div>The total is {{bluetotal | currency}}</div>
-<div>The total is {{purpletotal | currency}}</div>
-<div>The total is {{blacktotal | currency}}</div>
-<div>The total is {{skybluetotal | currency}}</div>
+<div>{{redtotal}}</div>    <!-- make a custom filter here -->
+<div>{{orangetotal}}</div>
+<div>{{yellowtotal}}</div>
+<div>{{greentotal}}</div>
+<div>{{bluetotal}}</div>
+<div>{{purpletotal}}</div>
+<div>{{blacktotal}}</div>
+<div>{{skybluetotal}}</div>
 
 
 </body>

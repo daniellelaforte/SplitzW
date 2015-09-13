@@ -27,92 +27,195 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
     for (var j = 0; j<$scope.prices.length; j++){
     	$scope.sum += parseFloat($scope.prices[j].amt);}
 
-    $scope.redtotal = $scope.totals.red + ($scope.totals.red/$scope.sum)*($scope.tax);
-    $scope.orangetotal = $scope.totals.orange;
-    $scope.yellowtotal = $scope.totals.yellow;
-    $scope.greentotal = $scope.totals.green;
-    $scope.bluetotal = $scope.totals.blue;
-    $scope.purpletotal = $scope.totals.purple;
-    $scope.blacktotal = $scope.totals.black;
-    $scope.skybluetotal = $scope.totals.skyblue;
+  	if ($scope.totals['red'] != 0  && $scope.totals['red'] != null)
+   		$scope.redtotal = "Red: " + ($scope.totals.red + ($scope.totals.red/$scope.sum)*($scope.tax));
+  	else
+  		$scope.redtotal = "";
+
+  	if ($scope.totals['orange'] != 0 && $scope.totals['orange'] != null)
+    	$scope.orangetotal = "Orange: " + ($scope.totals.orange + ($scope.totals.orange/$scope.sum)*($scope.tax));
+	else
+  		$scope.orangetotal = "";
+
+	if ($scope.totals['yellow'] != 0 && $scope.totals['yellow'] != null)
+    	$scope.yellowtotal = "Yellow: " + ($scope.totals.yellow + ($scope.totals.yellow/$scope.sum)*($scope.tax));
+	else
+  		$scope.yellowtotal = "";
+
+	if ($scope.totals['green'] != 0 && $scope.totals['green'] != null)
+    	$scope.greentotal = "Green: " + ($scope.totals.green + ($scope.totals.green/$scope.sum)*($scope.tax));
+	else
+  		$scope.greentotal = "";
+
+	if ($scope.totals['blue'] != 0 && $scope.totals['blue'] != null)
+    	$scope.bluetotal = "Blue: " + ($scope.totals.blue + ($scope.totals.blue/$scope.sum)*($scope.tax));
+	else
+  		$scope.bluetotal = "";
+
+	if ($scope.totals['purple'] != 0 && $scope.totals['purple'] != null)
+    	$scope.purpletotal = "Purple: " + ($scope.totals.purple + ($scope.totals.purple/$scope.sum)*($scope.tax));
+	else
+  		$scope.purpletotal = "";
+
+	if ($scope.totals['black'] != 0 && $scope.totals['black'] != null)
+    	$scope.blacktotal = "Black: " + ($scope.totals.black + ($scope.totals.black/$scope.sum)*($scope.tax));
+	else
+  		$scope.blacktotal = "";
+
+	if ($scope.totals['skyblue'] != 0 && $scope.totals['skyblue'] != null)
+    	$scope.skybluetotal = "Skyblue: " + ($scope.totals.skyblue + ($scope.totals.skyblue/$scope.sum)*($scope.tax));
+	else
+  		$scope.skybluetotal = "";
 
 
 		  
 		  
     }
 
-
-
-
- 	 $scope.clickLittle = function(index, str) {
+     $scope.clickOrange = function(index, str) {
  	 	
 		    $scope.prices[index].color=str;
- 
-      
 
-		    if (str==="red"){
-		    	 $scope.menured = function(index) {
-		    	 if (index === 0)
-		    	  	return "lightred";
-		    	 }
-
-		    }
 
 		    if (str==="orange"){
-		    	 $scope.menuorange = function(index) {
-		    	 if (index === 1)
-		    	  	return "lightorange";
-		    	  }
+		    	 $scope.menuorange = function(bug) {
+		    	 if (index == bug)
+		    	  	return "lightorange";}
 
 		    }
+	}
+	 $scope.clickYellow = function(index, str) {
+ 	 	
+		    $scope.prices[index].color=str;
 
-		     if (str==="yellow"){
-		    	 $scope.menuyellow = function(index) {
-		    	 if (index === 2)
-		    	  	return "lightyellow";
-		    	  }
 
-		    }
-
-		     if (str==="green"){
-		    	 $scope.menugreen = function(index) {
-		    	 if (index === 3)
-		    	  	return "lightgreen";
-		    	  }
+		    if (str==="yellow"){
+		    	 $scope.menuyellow = function(bug) {
+		    	 if (index == bug)
+		    	  	return "lightyellow";}
 
 		    }
+	}
+	 $scope.clickGreen = function(index, str) {
+ 	 	
+		    $scope.prices[index].color=str;
 
-		     if (str==="blue"){
-		    	 $scope.menublue = function(index) {
-		    	 if (index === 4)
-		    	  	return "lightblue";
-		    	  }
 
-		    }
-
-		     if (str==="purple"){
-		    	 $scope.menupurple = function(index) {
-		    	 if (index === 5)
-		    	  	return "lightpurple";
-		    	  }
+		    if (str==="green"){
+		    	 $scope.menugreen = function(bug) {
+		    	 if (index == bug)
+		    	  	return "lightgreen";}
 
 		    }
+	}
+	 $scope.clickBlue = function(index, str) {
+ 	 	
+		    $scope.prices[index].color=str;
 
-		     if (str==="black"){
-		    	 $scope.menublack = function(index) {
-		    	 if (index === 6)
-		    	  	return "lightblack";
-		    	  }
 
-		    }
-
-		     if (str==="skyblue"){
-		    	 $scope.menuskyblue = function(index) {
-		    	 if (index === 7)
-		    	  	return "lightskyblue";
-		    	  }
+		    if (str==="blue"){
+		    	 $scope.menublue = function(bug) {
+		    	 if (index == bug)
+		    	  	return "lightblue";}
 
 		    }
+	}
+	 $scope.clickPurple = function(index, str) {
+ 	 	
+		    $scope.prices[index].color=str;
+
+
+		    if (str==="purple"){
+		    	 $scope.menupurple = function(bug) {
+		    	 if (index == bug)
+		    	  	return "lightpurple";}
+
+		    }
+	}
+	 $scope.clickBlack = function(index, str) {
+ 	 	
+		    $scope.prices[index].color=str;
+
+
+		    if (str==="black"){
+		    	 $scope.menublack = function(bug) {
+		    	 if (index == bug)
+		    	  	return "lightblack";}
+
+		    }
+	}
+	 $scope.clickSkyblue = function(index, str) {
+ 	 	
+		    $scope.prices[index].color=str;
+
+
+		    if (str==="skyblue"){
+		    	 $scope.menuskyblue = function(bug) {
+		    	 if (index == bug)
+		    	  	return "lightskyblue";}
+
+		    }
+	}
+
+ 	 $scope.clickRed = function(index, str) {
+ 	 	
+		    $scope.prices[index].color=str;
+
+		    if (str==="red"){   //these functions make sure to set the correct classes depending on the index and which color is clicked
+		    	 $scope.menured = function(bug) {
+		    	 if (index == bug)
+		    	  	return "lightred";}
+		    	 	
+		    }
+
+		    // if (str==="orange"){
+		    // 	 $scope.menuorange = function(bug) {
+		    // 	 if (index == bug)
+		    // 	  	return "lightorange";}
+
+		    // }
+
+		    //  if (str==="yellow"){
+		    // 	 $scope.menuyellow = function(bug) {
+		    // 	 if (index == bug)
+		    // 	  	return "lightyellow"; }	
+
+		    // }
+
+		    //  if (str==="green"){
+		    // 	 $scope.menugreen = function(bug) {
+		    // 	 if (index == bug)
+		    // 	  	return "lightgreen";}
+		    	
+		    // }
+
+		    //  if (str==="blue"){
+		    // 	 $scope.menublue = function(bug) {
+		    // 	 if (index == bug)
+		    // 	  	return "lightblue";}
+		    	 
+		    // }
+
+		    //  if (str==="purple"){
+		    // 	 $scope.menupurple = function(bug) {
+		    // 	 if (index == bug)
+		    // 	  	return "lightpurple";}
+		    	 	
+		    // }
+
+		    //  if (str==="black"){
+		    // 	 $scope.menublack = function(bug) {
+		    // 	 if (index == bug)
+		    // 	  	return "lightblack"; }  	 	
+
+		    // }
+
+		    //  if (str==="skyblue"){
+		    // 	 $scope.menuskyblue = function(bug) {
+		    // 	 if (index == bug)
+		    // 	  	return "lightskyblue";}
+	
+		    // }
 		    	
 		           
 		    	
