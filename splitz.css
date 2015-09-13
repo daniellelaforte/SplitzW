@@ -1,3 +1,13 @@
+.inputbutton {
+	color: #d3d3d3;
+	border: 1px solid black;
+}
+
+.morevisible {
+	color: black;
+}
+
+
 .littleredbox {
 	height: 20px;
 	background-color: red;

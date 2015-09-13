@@ -11,7 +11,7 @@
 <div>
 
   <div ng-repeat="price in prices">
-  Price:<input type="text" ng-model="price.amt">
+  <input type="text" ng-model="price.amt" ng-click="removePrice(price)" class="inputbutton" ng-class="darker">
             <div class="littleredbox" ng-class="menured($index)" ng-click="clickRed($index, 'red')"></div>
             <div class="littleorangebox"  ng-class="menuorange($index)" ng-click="clickOrange($index, 'orange')"></div>
             <div class="littleyellowbox" ng-class="menuyellow($index)" ng-click="clickYellow($index, 'yellow')"></div>
