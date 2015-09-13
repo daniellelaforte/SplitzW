@@ -12,14 +12,14 @@
 
   <div ng-repeat="price in prices">
   Price:<input type="text" ng-model="price.amt">
-            <div class="littleredbox" ng-class="littleredboxclicked" ng-click="clickLittle($index, 'red')"></div>
-            <div class="littleorangebox" ng-class="littleorangeboxclicked" ng-click="clickLittle($index, 'orange')"></div>
-            <div class="littleyellowbox" ng-class="littleyellowboxclicked" ng-click="clickLittle($index, 'yellow')"></div>
-            <div class="littlegreenbox" ng-class="littlegreenboxclicked" ng-click="clickLittle($index, 'green')"></div>
-            <div class="littlebluebox" ng-class="littleblueboxclicked" ng-click="clickLittle($index, 'blue')"></div>
-            <div class="littlepurplebox" ng-class="littlepurpleboxclicked" ng-click="clickLittle($index, 'purple')"></div>
-            <div class="littleblackbox" ng-class="littleblackboxclicked" ng-click="clickLittle($index, 'black')"></div>
-            <div class="littleskybluebox" ng-class="littleskyblueboxclicked" ng-click="clickLittle($index, 'skyblue')"></div>
+            <div class="littleredbox" ng-class="menured($index)" ng-click="clickLittle($index, 'red')"></div>
+            <div class="littleorangebox"  ng-class="menuorange($index)" ng-click="clickLittle($index, 'orange')"></div>
+            <div class="littleyellowbox" ng-class="menuyellow($index)" ng-click="clickLittle($index, 'yellow')"></div>
+            <div class="littlegreenbox"  ng-class="menugreen($index)" ng-click="clickLittle($index, 'green')"></div>
+            <div class="littlebluebox"  ng-class="menublue($index)" ng-click="clickLittle($index, 'blue')"></div>
+            <div class="littlepurplebox"  ng-class="menupurple($index)" ng-click="clickLittle($index, 'purple')"></div>
+            <div class="littleblackbox"  ng-class="menublack($index)" ng-click="clickLittle($index, 'black')"></div>
+            <div class="littleskybluebox"  ng-class="menuskyblue($index)" ng-click="clickLittle($index, 'skyblue')"></div>
           
          
 
@@ -40,6 +40,10 @@
 <div>The total is {{orangetotal | currency}}</div>
 <div>The total is {{yellowtotal | currency}}</div>
 <div>The total is {{greentotal | currency}}</div>
+<div>The total is {{bluetotal | currency}}</div>
+<div>The total is {{purpletotal | currency}}</div>
+<div>The total is {{blacktotal | currency}}</div>
+<div>The total is {{skybluetotal | currency}}</div>
 
 
 </body>
