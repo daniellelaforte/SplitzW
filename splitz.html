@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!-- 1. style
+2. responsive
+3. tips (15% and 20%)
+4. fix closure issue with
+5. add reset button  -->
 <html ng-app="bear">
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
@@ -12,14 +17,14 @@
 
   <div ng-repeat="price in prices">
   <input type="text" ng-model="price.amt" ng-click="removePrice(price, $index)" class="inputbutton" ng-class="{ morevisible: bug[$index] == $index }">
-            <div class="littleredbox" ng-class="menured($index)" ng-click="clickRed($index, 'red')"></div>
-            <div class="littleorangebox"  ng-class="menuorange($index)" ng-click="clickOrange($index, 'orange')"></div>
-            <div class="littleyellowbox" ng-class="menuyellow($index)" ng-click="clickYellow($index, 'yellow')"></div>
-            <div class="littlegreenbox"  ng-class="menugreen($index)" ng-click="clickGreen($index, 'green')"></div>
-            <div class="littlebluebox"  ng-class="menublue($index)" ng-click="clickBlue($index, 'blue')"></div>
-            <div class="littlepurplebox"  ng-class="menupurple($index)" ng-click="clickPurple($index, 'purple')"></div>
-            <div class="littleblackbox"  ng-class="menublack($index)" ng-click="clickBlack($index, 'black')"></div>
-            <div class="littleskybluebox"  ng-class="menuskyblue($index)" ng-click="clickSkyblue($index, 'skyblue')"></div>
+            <div class="littleredbox" ng-class="{ lightred: red[$index] == $index }" ng-click="clickTheColor($index, 'red')"></div>
+            <div class="littleorangebox"  ng-class="{ lightorange: orange[$index] == $index }" ng-click="clickTheColor($index, 'orange')"></div>
+            <div class="littleyellowbox" ng-class="{ lightyellow: yellow[$index] == $index }" ng-click="clickTheColor($index, 'yellow')"></div>
+            <div class="littlegreenbox"  ng-class="{ lightgreen: green[$index] == $index }" ng-click="clickTheColor($index, 'green')"></div>
+            <div class="littlebluebox"  ng-class="{ lightblue: blue[$index] == $index }" ng-click="clickTheColor($index, 'blue')"></div>
+            <div class="littlepurplebox"  ng-class="{ lightpurple: purple[$index] == $index }" ng-click="clickTheColor($index, 'purple')"></div>
+            <div class="littleblackbox"  ng-class="{ lightblack: black[$index] == $index }" ng-click="clickTheColor($index, 'black')"></div>
+            <div class="littleskybluebox"  ng-class="{ lightskyblue: skyblue[$index] == $index }" ng-click="clickTheColor($index, 'skyblue')"></div>
           
          
 

@@ -6,6 +6,14 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
 	$scope.totals={};
 	$scope.sum=0;
 	$scope.bug=[];
+	$scope.red=[];
+	$scope.orange=[];
+	$scope.yellow=[];
+	$scope.green=[];
+	$scope.blue=[];
+	$scope.purple=[];
+	$scope.black=[];
+	$scope.skyblue=[];
 	
 	
     $scope.removePrice = function(price, index) {
@@ -89,144 +97,39 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
 
 		    }
 	}
-	 $scope.clickYellow = function(index, str) {
+
+ 	 $scope.clickTheColor = function(index, str) {
  	 	
 		    $scope.prices[index].color=str;
 
+		    if (str==='red')
+		    	$scope.red[index] = index;
 
-		    if (str==="yellow"){
-		    	 $scope.menuyellow = function(bug) {
-		    	 if (index == bug)
-		    	  	return "lightyellow";}
+		    if (str==='orange')
+		    	$scope.orange[index] = index;
 
-		    }
+		    if (str==='yellow')
+		    	$scope.yellow[index] = index;
+
+		    if (str==='green')
+		    	$scope.green[index] = index;
+
+		    if (str==='blue')
+		    	$scope.blue[index] = index;
+
+		    if (str==='purple')
+		    	$scope.purple[index] = index;
+
+		    if (str==='black')
+		    	$scope.black[index] = index;
+
+		    if (str==='skyblue')
+		    	$scope.skyblue[index] = index;
+
+
 	}
-	 $scope.clickGreen = function(index, str) {
- 	 	
-		    $scope.prices[index].color=str;
-
-
-		    if (str==="green"){
-		    	 $scope.menugreen = function(bug) {
-		    	 if (index == bug)
-		    	  	return "lightgreen";}
-
-		    }
-	}
-	 $scope.clickBlue = function(index, str) {
- 	 	
-		    $scope.prices[index].color=str;
-
-
-		    if (str==="blue"){
-		    	 $scope.menublue = function(bug) {
-		    	 if (index == bug)
-		    	  	return "lightblue";}
-
-		    }
-	}
-	 $scope.clickPurple = function(index, str) {
- 	 	
-		    $scope.prices[index].color=str;
-
-
-		    if (str==="purple"){
-		    	 $scope.menupurple = function(bug) {
-		    	 if (index == bug)
-		    	  	return "lightpurple";}
-
-		    }
-	}
-	 $scope.clickBlack = function(index, str) {
- 	 	
-		    $scope.prices[index].color=str;
-
-
-		    if (str==="black"){
-		    	 $scope.menublack = function(bug) {
-		    	 if (index == bug)
-		    	  	return "lightblack";}
-
-		    }
-	}
-	 $scope.clickSkyblue = function(index, str) {
- 	 	
-		    $scope.prices[index].color=str;
-
-
-		    if (str==="skyblue"){
-		    	 $scope.menuskyblue = function(bug) {
-		    	 if (index == bug)
-		    	  	return "lightskyblue";}
-
-		    }
-	}
-
- 	 $scope.clickRed = function(index, str) {
- 	 	
-		    $scope.prices[index].color=str;
-
-		    if (str==="red"){   //these functions make sure to set the correct classes depending on the index and which color is clicked
-		    	 $scope.menured = function(bug) {
-		    	 if (index == bug)
-		    	  	return "lightred";}
-		    	 	
-		    }
-
-		    // if (str==="orange"){
-		    // 	 $scope.menuorange = function(bug) {
-		    // 	 if (index == bug)
-		    // 	  	return "lightorange";}
-
-		    // }
-
-		    //  if (str==="yellow"){
-		    // 	 $scope.menuyellow = function(bug) {
-		    // 	 if (index == bug)
-		    // 	  	return "lightyellow"; }	
-
-		    // }
-
-		    //  if (str==="green"){
-		    // 	 $scope.menugreen = function(bug) {
-		    // 	 if (index == bug)
-		    // 	  	return "lightgreen";}
-		    	
-		    // }
-
-		    //  if (str==="blue"){
-		    // 	 $scope.menublue = function(bug) {
-		    // 	 if (index == bug)
-		    // 	  	return "lightblue";}
 		    	 
-		    // }
-
-		    //  if (str==="purple"){
-		    // 	 $scope.menupurple = function(bug) {
-		    // 	 if (index == bug)
-		    // 	  	return "lightpurple";}
-		    	 	
-		    // }
-
-		    //  if (str==="black"){
-		    // 	 $scope.menublack = function(bug) {
-		    // 	 if (index == bug)
-		    // 	  	return "lightblack"; }  	 	
-
-		    // }
-
-		    //  if (str==="skyblue"){
-		    // 	 $scope.menuskyblue = function(bug) {
-		    // 	 if (index == bug)
-		    // 	  	return "lightskyblue";}
-	
-		    // }
-		    	
-		           
-		    	
-		    	
-
-    }
+    
     $scope.Show = function() {
 		    	
 		    	$scope.prices.push({amt:"Enter Item Price", color:""}); 
