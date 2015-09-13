@@ -5,11 +5,13 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
 	$scope.prices=[{amt:"Enter Item Price", color:""}]
 	$scope.totals={};
 	$scope.sum=0;
+	$scope.bug=[];
 	
 	
-    $scope.removePrice = function(price) {
+    $scope.removePrice = function(price, index) {
     	price.amt = "";
-    	$scope.darker = "morevisible";
+    	$scope.bug[index] = index;
+    	
     }
 	
 	$scope.Submit = function() {
