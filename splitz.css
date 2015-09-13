@@ -8,69 +8,9 @@
 }
 
 
-.littleredbox {
-	height: 20px;
-	background-color: red;
-	width: 20px;
-	display: inline-block;
-	border: 1px solid black;
-}
 
-.littleorangebox {
-	height: 20px;
-	background-color: orange;
-	width: 20px;
-	display: inline-block;
-	border: 1px solid black;
-}
 
-.littleyellowbox {
-	height: 20px;
-	background-color: yellow;
-	width: 20px;
-	display: inline-block;
-	border: 1px solid black;
-}
 
-.littlegreenbox {
-	height: 20px;
-	background-color: green;
-	width: 20px;
-	display: inline-block;
-	border: 1px solid black;
-}
-
-.littlebluebox {
-	height: 20px;
-	background-color: blue;
-	width: 20px;
-	display: inline-block;
-	border: 1px solid black;
-}
-
-.littlepurplebox {
-	height: 20px;
-	background-color: purple;
-	width: 20px;
-	display: inline-block;
-	border: 1px solid black;
-}
-
-.littleblackbox {
-	height: 20px;
-	background-color: black;
-	width: 20px;
-	display: inline-block;
-	border: 1px solid black;
-}
-
-.littleskybluebox {
-	height: 20px;
-	background-color: skyblue;
-	width: 20px;
-	display: inline-block;
-	border: 1px solid black;
-}
 
 
 .lightred {
@@ -146,6 +86,68 @@
 	border: 1px solid black;
 }
 
+.littleredbox {
+	height: 20px;
+	background-color: red;
+	width: 20px;
+	display: inline-block;
+	border: 1px solid black;
+}
 
+.littleorangebox {
+	height: 20px;
+	background-color: orange;
+	width: 20px;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+.littleyellowbox {
+	height: 20px;
+	background-color: yellow;
+	width: 20px;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+.littlegreenbox {
+	height: 20px;
+	background-color: green;
+	width: 20px;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+.littlebluebox {
+	height: 20px;
+	background-color: blue;
+	width: 20px;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+.littlepurplebox {
+	height: 20px;
+	background-color: purple;
+	width: 20px;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+.littleblackbox {
+	height: 20px;
+	background-color: black;
+	width: 20px;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+.littleskybluebox {
+	height: 20px;
+	background-color: skyblue;
+	width: 20px;
+	display: inline-block;
+	border: 1px solid black;
+}
 
 

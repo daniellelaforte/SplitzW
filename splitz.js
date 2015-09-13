@@ -14,6 +14,15 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
 	$scope.purple=[];
 	$scope.black=[];
 	$scope.skyblue=[];
+	$scope.red[0]=1000;
+	$scope.orange[0]=1000;
+	$scope.yellow[0]=1000;
+	$scope.green[0]=1000;
+	$scope.blue[0]=1000;
+	$scope.purple[0]=1000;
+	$scope.black[0]=1000;
+	$scope.skyblue[0]=1000;
+
 	
 	
     $scope.removePrice = function(price, index) {
@@ -34,8 +43,9 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
         	$scope.totals[$scope.prices[i].color] = 0;
         $scope.totals[$scope.prices[i].color] += parseFloat($scope.prices[i].amt);
     }
-
+   
     $scope.tax = parseFloat($scope.tax);
+    
 
     for (var j = 0; j<$scope.prices.length; j++){
     	$scope.sum += parseFloat($scope.prices[j].amt);}
@@ -85,46 +95,135 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
 		  
     }
 
-     $scope.clickOrange = function(index, str) {
+ //     $scope.clickOrange = function(index, str) {
  	 	
-		    $scope.prices[index].color=str;
+	// 	    $scope.prices[index].color=str;
 
 
-		    if (str==="orange"){
-		    	 $scope.menuorange = function(bug) {
-		    	 if (index == bug)
-		    	  	return "lightorange";}
+	// 	    if (str==="orange"){
+	// 	    	 $scope.menuorange = function(bug) {
+	// 	    	 if (index == bug)
+	// 	    	  	return "lightorange";}
 
-		    }
-	}
+	// 	    }
+	// }
 
  	 $scope.clickTheColor = function(index, str) {
  	 	
 		    $scope.prices[index].color=str;
 
-		    if (str==='red')
-		    	$scope.red[index] = index;
+		    if (str==='red'){
+		    	if ($scope.red[index] !== index)
+		    		$scope.red[index] = index;
+		    	else 
+		    		$scope.red[index] = 1000;
+		    		$scope.orange[index] = 1000;
+		    		$scope.yellow[index] = 1000;
+		    		$scope.green[index] = 1000;
+		    		$scope.blue[index] = 1000;
+		    		$scope.purple[index] = 1000;
+		    		$scope.black[index] = 1000;
+		    		$scope.skyblue[index] = 1000;
+		    		}
 
-		    if (str==='orange')
-		    	$scope.orange[index] = index;
 
-		    if (str==='yellow')
-		    	$scope.yellow[index] = index;
+		    if (str==='orange'){
+		    	if ($scope.orange[index] !== index)
+		    		$scope.orange[index] = index;
+		    	else 
+		    		$scope.orange[index] = 1000;
+		    		$scope.red[index] = 1000;
+		    		$scope.yellow[index] = 1000;
+		    		$scope.green[index] = 1000;
+		    		$scope.blue[index] = 1000;
+		    		$scope.purple[index] = 1000;
+		    		$scope.black[index] = 1000;
+		    		$scope.skyblue[index] = 1000;
+		    		}
 
-		    if (str==='green')
-		    	$scope.green[index] = index;
+		    if (str==='yellow'){
+		    	if ($scope.yellow[index] !== index)
+		    		$scope.yellow[index] = index;
+		    	else 
+		    		$scope.yellow[index] = 1000;
+		    		$scope.red[index] = 1000;
+		    		$scope.orange[index] = 1000;
+		    		$scope.green[index] = 1000;
+		    		$scope.blue[index] = 1000;
+		    		$scope.purple[index] = 1000;
+		    		$scope.black[index] = 1000;
+		    		$scope.skyblue[index] = 1000;
+		    		}
 
-		    if (str==='blue')
-		    	$scope.blue[index] = index;
+		    if (str==='green'){
+		    	if ($scope.green[index] !== index)
+		    		$scope.green[index] = index;
+		    	else 
+		    		$scope.green[index] = 1000;
+		    		$scope.red[index] = 1000;
+		    		$scope.orange[index] = 1000;
+		    		$scope.yellow[index] = 1000;
+		    		$scope.blue[index] = 1000;
+		    		$scope.purple[index] = 1000;
+		    		$scope.black[index] = 1000;
+		    		$scope.skyblue[index] = 1000;
+		    		}
 
-		    if (str==='purple')
-		    	$scope.purple[index] = index;
+		    if (str==='blue'){
+		    	if ($scope.blue[index] !== index)
+		    		$scope.blue[index] = index;
+		    	else 
+		    		$scope.blue[index] = 1000;
+		    		$scope.red[index] = 1000;
+		    		$scope.orange[index] = 1000;
+		    		$scope.yellow[index] = 1000;
+		    		$scope.green[index] = 1000;
+		    		$scope.purple[index] = 1000;
+		    		$scope.black[index] = 1000;
+		    		$scope.skyblue[index] = 1000;
+		    		}
 
-		    if (str==='black')
-		    	$scope.black[index] = index;
+		    if (str==='purple'){
+		    	if ($scope.purple[index] !== index)
+		    		$scope.purple[index] = index;
+		    	else 
+		    		$scope.purple[index] = 1000;
+		    		$scope.red[index] = 1000;
+		    		$scope.orange[index] = 1000;
+		    		$scope.yellow[index] = 1000;
+		    		$scope.green[index] = 1000;
+		    		$scope.blue[index] = 1000;
+		    		$scope.black[index] = 1000;
+		    		$scope.skyblue[index] = 1000;
+		    		}
 
-		    if (str==='skyblue')
-		    	$scope.skyblue[index] = index;
+		    if (str==='black'){
+		    	if ($scope.black[index] !== index)
+		    		$scope.black[index] = index;
+		    	else 
+		    		$scope.black[index] = 1000;
+		    		$scope.red[index] = 1000;
+		    		$scope.orange[index] = 1000;
+		    		$scope.yellow[index] = 1000;
+		    		$scope.green[index] = 1000;
+		    		$scope.blue[index] = 1000;
+		    		$scope.purple[index] = 1000;
+		    		$scope.skyblue[index] = 1000;
+		    		}
+
+		    if (str==='skyblue'){
+		    	if ($scope.skyblue[index] !== index)
+		    		$scope.skyblue[index] = index;
+		    	else 
+		    		$scope.skyblue[index] = 1000;
+		    		$scope.red[index] = 1000;
+		    		$scope.orange[index] = 1000;
+		    		$scope.yellow[index] = 1000;
+		    		$scope.green[index] = 1000;
+		    		$scope.blue[index] = 1000;
+		    		$scope.purple[index] = 1000;
+		    		$scope.black[index] = 1000;
+		    		}
 
 
 	}
