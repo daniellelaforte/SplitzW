@@ -11,66 +11,66 @@
 }
 .littleredbox {
 	height: 20px;
-	background-color: red;
+	background-color: white;
 	width: 20px;
 	display: inline-block;
-	border: 5px solid lightgrey;
+	border: 2px solid red;
 }
 
 .littleorangebox {
 	height: 20px;
-	background-color: orange;
+	background-color: white;
 	width: 20px;
 	display: inline-block;
-	border: 5px solid lightgrey;
+	border: 2px solid orange;
 }
 
 .littleyellowbox {
 	height: 20px;
-	background-color: yellow;
+	background-color: white;
 	width: 20px;
 	display: inline-block;
-	border: 5px solid lightgrey;
+	border: 2px solid yellow;
 }
 
 .littlegreenbox {
 	height: 20px;
-	background-color: green;
+	background-color: white;
 	width: 20px;
 	display: inline-block;
-	border: 5px solid lightgrey;
+	border: 2px solid green;
 }
 
 .littlebluebox {
 	height: 20px;
-	background-color: blue;
+	background-color: white;
 	width: 20px;
 	display: inline-block;
-	border: 5px solid lightgrey;
+	border: 2px solid blue;
 }
 
 .littlepurplebox {
 	height: 20px;
-	background-color: purple;
+	background-color: white;
 	width: 20px;
 	display: inline-block;
-	border: 5px solid lightgrey;
+	border: 2px solid purple;
 }
 
 .littleblackbox {
 	height: 20px;
-	background-color: black;
+	background-color: white;
 	width: 20px;
 	display: inline-block;
-	border: 5px solid lightgrey;
+	border: 2px solid black;
 }
 
 .littleskybluebox {
 	height: 20px;
-	background-color: skyblue;
+	background-color: white;
 	width: 20px;
 	display: inline-block;
-	border: 5px solid lightgrey;
+	border: 2px solid skyblue;
 }
 
 
@@ -80,7 +80,7 @@
 	width: 20px;
 	display: inline-block;
 	/*opacity: 0.2;*/
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 }
 
 .lightorange {
@@ -89,16 +89,16 @@
 	width: 20px;
 	display: inline-block;
 	/*opacity: 0.2;*/
-	border: 2px solid black;
-}2
+	/*border: 2px solid black;*/
+}
 
 .lightyellow {
 	height: 20px;
 	background-color: yellow;
 	width: 20px;
 	display: inline-block;
-	opacity: 0.2;
-	border: 2px solid black;
+	/*opacity: 0.2;*/
+/*	border: 2px solid black;*/
 }
 
 .lightgreen {
@@ -106,8 +106,8 @@
 	background-color: green;
 	width: 20px;
 	display: inline-block;
-	opacity: 0.2;
-	border: 2px solid black;
+	/*opacity: 0.2;*/
+	/*border: 2px solid black;*/
 }
 
 .lightblue {
@@ -115,8 +115,8 @@
 	background-color: blue;
 	width: 20px;
 	display: inline-block;
-	opacity: 0.2;
-	border: 2px solid black;
+	/*opacity: 0.2;*/
+	/*border: 2px solid black;*/
 
 }
 
@@ -125,8 +125,8 @@
 	background-color: purple;
 	width: 20px;
 	display: inline-block;
-	opacity: 0.2;
-	border: 2px solid black;
+	/*opacity: 0.2;*/
+	/*border: 2px solid black;*/
 }
 
 .lightblack {
@@ -134,8 +134,8 @@
 	background-color: black;
 	width: 20px;
 	display: inline-block;
-	opacity: 0.2;
-	border: 2px solid black;
+	/*opacity: 0.2;*/
+	/*border: 2px solid black;*/
 }
 
 .lightskyblue {
@@ -143,8 +143,8 @@
 	background-color: skyblue;
 	width: 20px;
 	display: inline-block;
-	opacity: 0.2;
-	border: 2px solid black;
+	/*opacity: 0.2;*/
+	/*border: 2px solid black;*/
 }
 
 
