@@ -1,3 +1,6 @@
+* { box-sizing: border-box } 
+
+
 .inputbutton {
 	color: #d3d3d3;
 	border: 1px solid black;
@@ -6,11 +9,69 @@
 .morevisible {
 	color: black;
 }
+.littleredbox {
+	height: 20px;
+	background-color: red;
+	width: 20px;
+	display: inline-block;
+	border: 5px solid lightgrey;
+}
 
+.littleorangebox {
+	height: 20px;
+	background-color: orange;
+	width: 20px;
+	display: inline-block;
+	border: 5px solid lightgrey;
+}
 
+.littleyellowbox {
+	height: 20px;
+	background-color: yellow;
+	width: 20px;
+	display: inline-block;
+	border: 5px solid lightgrey;
+}
 
+.littlegreenbox {
+	height: 20px;
+	background-color: green;
+	width: 20px;
+	display: inline-block;
+	border: 5px solid lightgrey;
+}
 
+.littlebluebox {
+	height: 20px;
+	background-color: blue;
+	width: 20px;
+	display: inline-block;
+	border: 5px solid lightgrey;
+}
 
+.littlepurplebox {
+	height: 20px;
+	background-color: purple;
+	width: 20px;
+	display: inline-block;
+	border: 5px solid lightgrey;
+}
+
+.littleblackbox {
+	height: 20px;
+	background-color: black;
+	width: 20px;
+	display: inline-block;
+	border: 5px solid lightgrey;
+}
+
+.littleskybluebox {
+	height: 20px;
+	background-color: skyblue;
+	width: 20px;
+	display: inline-block;
+	border: 5px solid lightgrey;
+}
 
 
 .lightred {
@@ -18,8 +79,8 @@
 	background-color: red;
 	width: 20px;
 	display: inline-block;
-	opacity: 0.2;
-	border: 1px solid black;
+	/*opacity: 0.2;*/
+	border: 2px solid black;
 }
 
 .lightorange {
@@ -27,9 +88,9 @@
 	background-color: orange;
 	width: 20px;
 	display: inline-block;
-	opacity: 0.2;
-	border: 1px solid black;
-}
+	/*opacity: 0.2;*/
+	border: 2px solid black;
+}2
 
 .lightyellow {
 	height: 20px;
@@ -37,7 +98,7 @@
 	width: 20px;
 	display: inline-block;
 	opacity: 0.2;
-	border: 1px solid black;
+	border: 2px solid black;
 }
 
 .lightgreen {
@@ -46,7 +107,7 @@
 	width: 20px;
 	display: inline-block;
 	opacity: 0.2;
-	border: 1px solid black;
+	border: 2px solid black;
 }
 
 .lightblue {
@@ -55,7 +116,7 @@
 	width: 20px;
 	display: inline-block;
 	opacity: 0.2;
-	border: 1px solid black;
+	border: 2px solid black;
 
 }
 
@@ -65,7 +126,7 @@
 	width: 20px;
 	display: inline-block;
 	opacity: 0.2;
-	border: 1px solid black;
+	border: 2px solid black;
 }
 
 .lightblack {
@@ -74,7 +135,7 @@
 	width: 20px;
 	display: inline-block;
 	opacity: 0.2;
-	border: 1px solid black;
+	border: 2px solid black;
 }
 
 .lightskyblue {
@@ -83,71 +144,8 @@
 	width: 20px;
 	display: inline-block;
 	opacity: 0.2;
-	border: 1px solid black;
+	border: 2px solid black;
 }
 
-.littleredbox {
-	height: 20px;
-	background-color: red;
-	width: 20px;
-	display: inline-block;
-	border: 1px solid black;
-}
-
-.littleorangebox {
-	height: 20px;
-	background-color: orange;
-	width: 20px;
-	display: inline-block;
-	border: 1px solid black;
-}
-
-.littleyellowbox {
-	height: 20px;
-	background-color: yellow;
-	width: 20px;
-	display: inline-block;
-	border: 1px solid black;
-}
-
-.littlegreenbox {
-	height: 20px;
-	background-color: green;
-	width: 20px;
-	display: inline-block;
-	border: 1px solid black;
-}
-
-.littlebluebox {
-	height: 20px;
-	background-color: blue;
-	width: 20px;
-	display: inline-block;
-	border: 1px solid black;
-}
-
-.littlepurplebox {
-	height: 20px;
-	background-color: purple;
-	width: 20px;
-	display: inline-block;
-	border: 1px solid black;
-}
-
-.littleblackbox {
-	height: 20px;
-	background-color: black;
-	width: 20px;
-	display: inline-block;
-	border: 1px solid black;
-}
-
-.littleskybluebox {
-	height: 20px;
-	background-color: skyblue;
-	width: 20px;
-	display: inline-block;
-	border: 1px solid black;
-}
 
 
