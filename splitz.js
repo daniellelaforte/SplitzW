@@ -2,7 +2,7 @@ angular.module("bear", []);
 
 angular.module("bear").controller("polarbearcontroller", ["$scope", function($scope){
 	$scope.message = "Add another price";
-	$scope.prices=[{amt:"Enter Item Price", color:""}]
+	$scope.prices=[{amt:"Enter Amount", color:""}]
 	$scope.totals={};
 	$scope.sum=0;
 	$scope.bug=[];
@@ -38,25 +38,41 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
     	$scope.bug[index] = index;
     	
     }
+
+    $scope.Reset = function() {
+    	$scope.redtotal1 = false;
+		$scope.orangetotal1 = false;
+		$scope.yellowtotal1 = false;
+		$scope.greentotal1 = false;
+		$scope.bluetotal1 = false;
+		$scope.purpletotal1 = false;
+		$scope.blacktotal1 = false;
+		$scope.skybluetotal1 = false;
+		$scope.prices=[{amt:"Enter Amount", color:""}]
+		$scope.totals={};
+		$scope.sum=0;
+    }
 	
 	$scope.Submit = function() {
 			//event.preventDefault(); //don't need this - angular does this automatically
-		 
+	$scope.totals={};
+	
 
     for (var i = 0; i<$scope.prices.length; i++){
-     	console.log($scope.prices[i].color);
-        console.log($scope.prices[i].amt);
-
-        if (!$scope.totals[$scope.prices[i].color])
+        if (!$scope.totals[$scope.prices[i].color]) 
         	$scope.totals[$scope.prices[i].color] = 0;
-        $scope.totals[$scope.prices[i].color] += parseFloat($scope.prices[i].amt);
+
+        if (!isNan(Number(parseFloat($scope.prices[i].amt))))
+        	$scope.totals[$scope.prices[i].color] += parseFloat($scope.prices[i].amt);
     }
    
     $scope.tax = parseFloat($scope.tax) || 0;
     
 
     for (var j = 0; j<$scope.prices.length; j++){
-    	$scope.sum += parseFloat($scope.prices[j].amt);}
+    	if (!isNan(Number(parseFloat($scope.prices[j].amt))))
+    		$scope.sum += parseFloat($scope.prices[j].amt);
+    }
 
   	if ($scope.totals['red'] != 0  && ($scope.totals['red'] != null && $scope.totals['red'] != NaN)) {
    		$scope.redtotal =($scope.totals.red + ($scope.totals.red/$scope.sum)*($scope.tax));
@@ -269,7 +285,7 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
     
     $scope.Show = function() {
 		    	
-		    	$scope.prices.push({amt:"Enter Item Price", color:""}); 
+		    	$scope.prices.push({amt:"Enter Amount", color:""}); 
 
     }
 
