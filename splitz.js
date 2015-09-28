@@ -96,6 +96,9 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
   	if ($scope.totals['red'] != 0  && ($scope.totals['red'] != null && $scope.totals['red'] != NaN)) {
    		$scope.redtotal =($scope.totals.red + ($scope.totals.red/$scope.sum)*($scope.tax));
    		$scope.redtotal1 = true;
+   		$scope.redtotal15 = $scope.redtotal*(.15)+$scope.redtotal
+   		$scope.redtotal20 = $scope.redtotal*(.20)+$scope.redtotal
+
   	}
   	else{
   		$scope.redtotal1 = false;
@@ -104,6 +107,8 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
   	if ($scope.totals['orange'] != 0 && ($scope.totals['orange'] != null && $scope.totals['orange'] != NaN)){
     	$scope.orangetotal = ($scope.totals.orange + ($scope.totals.orange/$scope.sum)*($scope.tax));
     	$scope.orangetotal1 = true;
+    	$scope.orangetotal15 = $scope.orangetotal*(.15)+$scope.orangetotal
+   		$scope.orangetotal20 = $scope.orangetotal*(.20)+$scope.orangetotal
   	}
  
 	else{
@@ -113,6 +118,8 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
 	if ($scope.totals['yellow'] != 0 && ($scope.totals['yellow'] != null && $scope.totals['yellow'] != NaN)){
     	$scope.yellowtotal =  ($scope.totals.yellow + ($scope.totals.yellow/$scope.sum)*($scope.tax));
     	$scope.yellowtotal1 = true;
+    	$scope.yellowtotal15 = $scope.yellowtotal*(.15)+$scope.yellowtotal
+   		$scope.yellowtotal20 = $scope.yellowtotal*(.20)+$scope.yellowtotal
   	}
 	
 	else{
@@ -122,6 +129,8 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
 	if ($scope.totals['green'] != 0 && ($scope.totals['green'] != null && $scope.totals['green'] != NaN)){
     	$scope.greentotal = ($scope.totals.green + ($scope.totals.green/$scope.sum)*($scope.tax));
     	$scope.greentotal1 = true;
+    	$scope.greentotal15 = $scope.greentotal*(.15)+$scope.greentotal
+   		$scope.greentotal20 = $scope.greentotal*(.20)+$scope.greentotal
   	}
 	
 	else{
@@ -131,6 +140,8 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
 	if ($scope.totals['blue'] != 0 && ($scope.totals['blue'] != null && $scope.totals['blue'] != NaN)){
     	$scope.bluetotal = ($scope.totals.blue + ($scope.totals.blue/$scope.sum)*($scope.tax));
     	$scope.bluetotal1 = true;
+    	$scope.bluetotal15 = $scope.bluetotal*(.15)+$scope.bluetotal
+   		$scope.bluetotal20 = $scope.bluetotal*(.20)+$scope.bluetotal
   	}
 	
 	else{
@@ -140,6 +151,8 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
 	if ($scope.totals['purple'] != 0 && ($scope.totals['purple'] != null && $scope.totals['purple'] != NaN)){
     	$scope.purpletotal = ($scope.totals.purple + ($scope.totals.purple/$scope.sum)*($scope.tax));
     	$scope.purpletotal1 = true;
+    	$scope.purpletotal15 = $scope.purpletotal*(.15)+$scope.purpletotal
+   		$scope.purpletotal20 = $scope.purpletotal*(.20)+$scope.purpletotal
   	}
 	
 	else{
@@ -149,6 +162,8 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
 	if ($scope.totals['black'] != 0 && ($scope.totals['black'] != null && $scope.totals['black'] != NaN)){
     	$scope.blacktotal = ($scope.totals.black + ($scope.totals.black/$scope.sum)*($scope.tax));
     	$scope.blacktotal1 = true;
+    	$scope.blacktotal15 = $scope.blacktotal*(.15)+$scope.blacktotal
+   		$scope.blacktotal20 = $scope.blacktotal*(.20)+$scope.blacktotal
   	}
 	
 	else{
@@ -158,6 +173,8 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
 	if ($scope.totals['skyblue'] != 0 && ($scope.totals['skyblue'] != null && $scope.totals['skyblue'] != NaN)){
     	$scope.skybluetotal = ($scope.totals.skyblue + ($scope.totals.skyblue/$scope.sum)*($scope.tax));
     	$scope.skybluetotal1 = true;
+    	$scope.skybluetotal15 = $scope.skybluetotal*(.15)+$scope.skybluetotal
+   		$scope.skybluetotal20 = $scope.skybluetotal*(.20)+$scope.skybluetotal
   	}
 	
 	else{
@@ -300,11 +317,17 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
 
 
 	}
-		    	 
+	
+	var Priceobj = function () {
+		this.amt = "Enter Amount";
+		this.color = "";
+	}	
+
+	var priceobjagain = new Priceobj();    	 
     
     $scope.Show = function() {
 		    	
-		    	$scope.prices.push({amt:"Enter Amount", color:""}); 
+		    	$scope.prices.push(angular.copy(priceobjagain));
 
     }
 

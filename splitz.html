@@ -2,7 +2,7 @@
 <!-- 1. style
 2. responsive
 3. tips (15% and 20%)
-7. instantiate an object-->
+-->
 <html ng-app="bear">
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
@@ -41,14 +41,14 @@
 
 </div>
 
-<div ng-show="redtotal1">Red Pays: {{redtotal | currency}}</div>    <!-- make a custom filter here -->
-<div ng-show="orangetotal1">Orange Pays: {{orangetotal | currency}}</div>
-<div ng-show="yellowtotal1">Yellow Pays: {{yellowtotal | currency}}</div>
-<div ng-show="greentotal1">Green Pays: {{greentotal | currency}}</div>
-<div ng-show="bluetotal1">Blue Pays: {{bluetotal | currency}}</div>
-<div ng-show="purpletotal1">Purple Pays: {{purpletotal | currency}}</div>
-<div ng-show="blacktotal1">Black Pays: {{blacktotal | currency}}</div>
-<div ng-show="skybluetotal1">Skyblue Pays: {{skybluetotal | currency}}</div>
+<div ng-show="redtotal1">Red Pays: {{redtotal | currency}} w/20% Tip: {{ redtotal20 | currency }} w/15% Tip: {{ redtotal15 | currency }}</div>
+<div ng-show="orangetotal1">Orange Pays: {{orangetotal | currency}} w/20% Tip: {{ orangetotal20 | currency }} w/15% Tip: {{ orangetotal15 | currency }}</div>
+<div ng-show="yellowtotal1">Yellow Pays: {{yellowtotal | currency}} w/20% Tip: {{ yellowtotal20 | currency }} w/15% Tip: {{ yellowtotal15 | currency }}</div>
+<div ng-show="greentotal1">Green Pays: {{greentotal | currency}} w/20% Tip: {{ greentotal20 | currency }} w/15% Tip: {{ greentotal15 | currency }}</div>
+<div ng-show="bluetotal1">Blue Pays: {{bluetotal | currency}} w/20% Tip: {{ bluetotal20 | currency }} w/15% Tip: {{ bluetotal15 | currency }}</div>
+<div ng-show="purpletotal1">Purple Pays: {{purpletotal | currency}} w/20% Tip: {{ purpletotal20 | currency }} w/15% Tip: {{ purpletotal15 | currency }}</div>
+<div ng-show="blacktotal1">Black Pays: {{blacktotal | currency}} w/20% Tip: {{ blacktotal20 | currency }} w/15% Tip: {{ blacktotal15 | currency }}</div>
+<div ng-show="skybluetotal1">Skyblue Pays: {{skybluetotal | currency}} w/20% Tip: {{ skybluetotal20 | currency }} w/15% Tip: {{ skybluetotal15 | currency }}</div>
 
 
 </body>
