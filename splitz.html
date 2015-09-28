@@ -4,7 +4,8 @@
 3. tips (15% and 20%)
 4. fixed closure issue  - now need to make colors better
 5. add reset button  
-6. clear out totals object if they don't press reset-->
+6. clear out totals object if they don't press reset
+7. instantiate an object-->
 <html ng-app="bear">
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
@@ -42,14 +43,14 @@
 
 </div>
 
-<div>{{redtotal}}</div>    <!-- make a custom filter here -->
-<div>{{orangetotal}}</div>
-<div>{{yellowtotal}}</div>
-<div>{{greentotal}}</div>
-<div>{{bluetotal}}</div>
-<div>{{purpletotal}}</div>
-<div>{{blacktotal}}</div>
-<div>{{skybluetotal}}</div>
+<div ng-show="redtotal1">Red Pays: {{redtotal | currency}}</div>    <!-- make a custom filter here -->
+<div ng-show="orangetotal1">Orange Pays: {{orangetotal | currency}}</div>
+<div ng-show="yellowtotal1">Yellow Pays: {{yellowtotal | currency}}</div>
+<div ng-show="greentotal1">Green Pays: {{greentotal | currency}}</div>
+<div ng-show="bluetotal1">Blue Pays: {{bluetotal | currency}}</div>
+<div ng-show="purpletotal1">Purple Pays: {{purpletotal | currency}}</div>
+<div ng-show="blacktotal1">Black Pays: {{blacktotal | currency}}</div>
+<div ng-show="skybluetotal1">Skyblue Pays: {{skybluetotal | currency}}</div>
 
 
 </body>
