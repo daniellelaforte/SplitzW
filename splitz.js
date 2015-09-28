@@ -51,26 +51,45 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
 		$scope.prices=[{amt:"Enter Amount", color:""}]
 		$scope.totals={};
 		$scope.sum=0;
+		$scope.bug=[];
+		$scope.red=[];
+		$scope.orange=[];
+		$scope.yellow=[];
+		$scope.green=[];
+		$scope.blue=[];
+		$scope.purple=[];
+		$scope.black=[];
+		$scope.skyblue=[];
+		$scope.red[0]=1000;
+		$scope.orange[0]=1000;
+		$scope.yellow[0]=1000;
+		$scope.green[0]=1000;
+		$scope.blue[0]=1000;
+		$scope.purple[0]=1000;
+		$scope.black[0]=1000;
+		$scope.skyblue[0]=1000;
+		$scope.tax = 0;
     }
 	
 	$scope.Submit = function() {
 			//event.preventDefault(); //don't need this - angular does this automatically
 	$scope.totals={};
+	$scope.sum = 0;
 	
 
     for (var i = 0; i<$scope.prices.length; i++){
         if (!$scope.totals[$scope.prices[i].color]) 
         	$scope.totals[$scope.prices[i].color] = 0;
 
-        if (!isNan(Number(parseFloat($scope.prices[i].amt))))
+        if (!isNaN(Number(parseFloat($scope.prices[i].amt))))
         	$scope.totals[$scope.prices[i].color] += parseFloat($scope.prices[i].amt);
     }
-   
+ 
     $scope.tax = parseFloat($scope.tax) || 0;
     
 
     for (var j = 0; j<$scope.prices.length; j++){
-    	if (!isNan(Number(parseFloat($scope.prices[j].amt))))
+    	if (!isNaN(Number(parseFloat($scope.prices[j].amt))))
     		$scope.sum += parseFloat($scope.prices[j].amt);
     }
 
