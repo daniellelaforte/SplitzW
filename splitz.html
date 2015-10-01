@@ -9,81 +9,108 @@
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="splitz.css">
 	<title>Splytz.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body ng-controller="polarbearcontroller">
-<div class="container">
-  <div class="row">
-  <div class="col-xs-12 headline">Splytz.</div>
-    <p>Each person enters one item's price per field and chooses a color.  If Person A has two items, he would enter the price and select red, and then enter the other price and select red again.  One color per person.</p>
-  <div>
-  </div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 headline">Splytz.</div>
+            <br>
+             
+    </div>
+
+
 <div class="row centerz">
-
-  <div ng-repeat="price in prices">
-  
-
-  <div class="col-xs-6">
- <form class="form-inline">
-    <div class="form-group">
-    <input type="text" class="form-control" placeholder="Enter Price" id="exampleInputName3" ng-model="price.amt" ng-class="{ morevisible: bug[$index] == $index }">
-  </div>
-  </form>
-
-
-  <!-- <input value="Enter" type="text" ng-model="price.amt" ng-click="removePrice(price, $index)" class="inputbutton" ng-class="{ morevisible: bug[$index] == $index }"> --></div>
-  <div class="col-xs-6">
+    <div ng-repeat="price in prices">
+        <div class="col-xs-6">
+            <form class="form-inline">
+            <div class="form-group"><br>
+            <input type="text" class="form-control" placeholder="Enter Price" id="exampleInputName3" ng-model="price.amt" ng-class="{ morevisible: bug[$index] == $index }">
+            </div>
+            </form>
+        <!-- </div> -->
+        </div>
+  <!-- <input value="Enter" type="text" ng-model="price.amt" ng-click="removePrice(price, $index)" class="inputbutton" ng-class="{ morevisible: bug[$index] == $index }"> -->
+       <div class="col-xs-6">
             <div class="littleredbox" ng-class="{ lightred: red[$index] == $index }" ng-click="clickTheColor($index, 'red')"></div>
             <div class="littleorangebox"  ng-class="{ lightorange: orange[$index] == $index }" ng-click="clickTheColor($index, 'orange')"></div>
             <div class="littleyellowbox" ng-class="{ lightyellow: yellow[$index] == $index }" ng-click="clickTheColor($index, 'yellow')"></div>
             <div class="littlegreenbox"  ng-class="{ lightgreen: green[$index] == $index }" ng-click="clickTheColor($index, 'green')"></div>
- 
-
             <div class="littlebluebox"  ng-class="{ lightblue: blue[$index] == $index }" ng-click="clickTheColor($index, 'blue')"></div>
             <div class="littlepurplebox"  ng-class="{ lightpurple: purple[$index] == $index }" ng-click="clickTheColor($index, 'purple')"></div>
             <div class="littleblackbox"  ng-class="{ lightblack: black[$index] == $index }" ng-click="clickTheColor($index, 'black')"></div>
             <div class="littleskybluebox"  ng-class="{ lightskyblue: skyblue[$index] == $index }" ng-click="clickTheColor($index, 'skyblue')"></div>
-  </div>                                                                                                                                                   
-          
-         
-
-  <br>
-  <br>
+        </div>                                                                                                                                                   
+          <br><br>
   </div>
-  
+</div>
 
-  <div><button type="button"  ng-click="Show()" class="btn btn-primary">Add Another Price</button>
-  </div> 
+
+<div class="row centerz">
+    <div class="col-xs-6 col-xs-offset-3">
+    <br>
+        <div><button type="button"  ng-click="Show()" class="btn btn-primary">Add Another Price</button>
+        </div> 
+    </div>
+</div>
+
 
  <!--  <div ng-click="Reset()">Reset
   </div> -->
  
  <!--  Total Tax:<input type="text" ng-model="tax" class="backinput"><br> -->
  <br>
- <div class="col-xs-6">
-  <form class="form-inline">
-  <div class="form-group">
-    <label for="exampleInputName2">Tax</label>
-    <input type="text" class="form-control" id="exampleInputName2" ng-model="tax" placeholder="Total Tax">
-  </div>
-  </form>
-  </div>
-  <button ng-click="Submit()" type="button" class="btn btn-success backinput">Submit</button><br><br><br>
-  <button ng-click="Reset()" type="button" class="btn btn-danger">Reset Form</button>
+ <div class="row centerz">
+      <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-5">
+          <form>
+              <div class="form-group">
+              
+              <input type="text" class="form-control" id="exampleInputName2" ng-model="tax" placeholder="Total Tax">
+              </div>
+          </form>
+      </div>
+</div>
+
+
+ <div class="row centerz">
+      <div class="col-xs-6 col-xs-offset-3">
+            <button ng-click="Submit()" type="button" class="btn btn-success backinput">Submit</button><br><br><br>
+      </div>
+</div>
+
+<div class="row centerz">
+      <div class="col-xs-6 col-xs-offset-3">
+            <button ng-click="Reset()" type="button" class="btn btn-danger">Reset Form</button><br><br>
+      </div>
+</div>
+
+<div class="row centerz">
+    <div class="col-xs-12">
+        <p>Each person enters one item's price per field and chooses a color.  If Person A has two items, he would enter the price and select red, and then enter the other price and select red again.  One color per person.</p>
+    </div>
+</div>
+           
   <!-- <input ng-click="Submit()"  value="Submit" class="backinput"> -->
 
-</div>
+
+<div class="row centerz">
+    <div class="col-xs-12">
+      <div ng-show="redtotal1"><button type="button" class="btn btn-primary butred">Red Pays: {{redtotal | currency}} <br> w/20% Tip: {{ redtotal20 | currency }} w/15% Tip: {{ redtotal15 | currency }}</button></div>
+      <div ng-show="orangetotal1"><button type="button" class="btn btn-primary butorg">Orange Pays: {{orangetotal | currency}} <br> w/20% Tip: {{ orangetotal20 | currency }} w/15% Tip: {{ orangetotal15 | currency }}</button></div>
+      <div ng-show="yellowtotal1"><button type="button" class="btn btn-primary butyel">Yellow Pays: {{yellowtotal | currency}} <br> w/20% Tip: {{ yellowtotal20 | currency }} w/15% Tip: {{ yellowtotal15 | currency }}</button></div>
+      <div ng-show="greentotal1"><button type="button" class="btn btn-primary butgreen">Green Pays: {{greentotal | currency}} <br> w/20% Tip: {{ greentotal20 | currency }} w/15% Tip: {{ greentotal15 | currency }}</button></div>
+      <div ng-show="bluetotal1"><button type="button" class="btn btn-primary butblue">Blue Pays: {{bluetotal | currency}} <br> w/20% Tip: {{ bluetotal20 | currency }} w/15% Tip: {{ bluetotal15 | currency }}</button></div>
+      <div ng-show="purpletotal1"><button type="button" class="btn btn-primary butpurp">Purple Pays: {{purpletotal | currency}} <br> w/20% Tip: {{ purpletotal20 | currency }} w/15% Tip: {{ purpletotal15 | currency }}</button></div>
+      <div ng-show="blacktotal1"><button type="button" class="btn btn-primary butblack">Black Pays: {{blacktotal | currency}} <br> w/20% Tip: {{ blacktotal20 | currency }} w/15% Tip: {{ blacktotal15 | currency }}</button></div>
+      <div ng-show="skybluetotal1"><button type="button" class="btn btn-primary butsky">Skyblue Pays: {{skybluetotal | currency}} <br> w/20% Tip: {{ skybluetotal20 | currency }} w/15% Tip: {{ skybluetotal15 | currency }}</button></div>
+    </div>
 </div>
 
-<div ng-show="redtotal1">Red Pays: {{redtotal | currency}} w/20% Tip: {{ redtotal20 | currency }} w/15% Tip: {{ redtotal15 | currency }}</div>
-<div ng-show="orangetotal1">Orange Pays: {{orangetotal | currency}} w/20% Tip: {{ orangetotal20 | currency }} w/15% Tip: {{ orangetotal15 | currency }}</div>
-<div ng-show="yellowtotal1">Yellow Pays: {{yellowtotal | currency}} w/20% Tip: {{ yellowtotal20 | currency }} w/15% Tip: {{ yellowtotal15 | currency }}</div>
-<div ng-show="greentotal1">Green Pays: {{greentotal | currency}} w/20% Tip: {{ greentotal20 | currency }} w/15% Tip: {{ greentotal15 | currency }}</div>
-<div ng-show="bluetotal1">Blue Pays: {{bluetotal | currency}} w/20% Tip: {{ bluetotal20 | currency }} w/15% Tip: {{ bluetotal15 | currency }}</div>
-<div ng-show="purpletotal1">Purple Pays: {{purpletotal | currency}} w/20% Tip: {{ purpletotal20 | currency }} w/15% Tip: {{ purpletotal15 | currency }}</div>
-<div ng-show="blacktotal1">Black Pays: {{blacktotal | currency}} w/20% Tip: {{ blacktotal20 | currency }} w/15% Tip: {{ blacktotal15 | currency }}</div>
-<div ng-show="skybluetotal1">Skyblue Pays: {{skybluetotal | currency}} w/20% Tip: {{ skybluetotal20 | currency }} w/15% Tip: {{ skybluetotal15 | currency }}</div>
+
 
 </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
 <script src="splitz.js"></script>
