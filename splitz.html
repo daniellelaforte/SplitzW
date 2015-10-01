@@ -21,9 +21,9 @@
     </div>
 
 
-<div class="row centerz">
-    <div ng-repeat="price in prices">
-        <div class="col-xs-6">
+<div class="row centerz" ng-repeat="price in prices">
+    
+        <div class="col-xs-5 nopad">
             <form class="form-inline">
             <div class="form-group"><br>
             <input type="text" class="form-control" placeholder="Enter Price" id="exampleInputName3" ng-model="price.amt" ng-class="{ morevisible: bug[$index] == $index }">
@@ -32,7 +32,8 @@
         <!-- </div> -->
         </div>
   <!-- <input value="Enter" type="text" ng-model="price.amt" ng-click="removePrice(price, $index)" class="inputbutton" ng-class="{ morevisible: bug[$index] == $index }"> -->
-       <div class="col-xs-6">
+       <div class="col-xs-7 nopad">
+          <div class="colorbuttons">
             <div class="littleredbox" ng-class="{ lightred: red[$index] == $index }" ng-click="clickTheColor($index, 'red')"></div>
             <div class="littleorangebox"  ng-class="{ lightorange: orange[$index] == $index }" ng-click="clickTheColor($index, 'orange')"></div>
             <div class="littleyellowbox" ng-class="{ lightyellow: yellow[$index] == $index }" ng-click="clickTheColor($index, 'yellow')"></div>
@@ -41,9 +42,10 @@
             <div class="littlepurplebox"  ng-class="{ lightpurple: purple[$index] == $index }" ng-click="clickTheColor($index, 'purple')"></div>
             <div class="littleblackbox"  ng-class="{ lightblack: black[$index] == $index }" ng-click="clickTheColor($index, 'black')"></div>
             <div class="littleskybluebox"  ng-class="{ lightskyblue: skyblue[$index] == $index }" ng-click="clickTheColor($index, 'skyblue')"></div>
+          </div>
         </div>                                                                                                                                                   
           <br><br>
-  </div>
+  
 </div>
 
 

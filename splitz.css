@@ -39,7 +39,7 @@ p {
 }
 .littleredbox {
 	height: 25px;
-	background-color: #bdc3c7;
+	background-color: rgba(22, 160, 133, 0.49);
 	width: 20px;
 	display: inline-block;
 	border: 3px solid red;
@@ -48,7 +48,7 @@ p {
 
 .littleorangebox {
 	height: 25px;
-	background-color: #bdc3c7;
+	background-color: rgba(22, 160, 133, 0.49);
 	width: 20px;
 	display: inline-block;
 	border: 3px solid orange;
@@ -57,7 +57,7 @@ p {
 
 .littleyellowbox {
 	height: 25px;
-	background-color: #bdc3c7;
+	background-color: rgba(22, 160, 133, 0.49);
 	width: 20px;
 	display: inline-block;
 	border: 3px solid yellow;
@@ -66,7 +66,7 @@ p {
 
 .littlegreenbox {
 	height: 25px;
-	background-color: #bdc3c7;
+	background-color: rgba(22, 160, 133, 0.49);
 	width: 20px;
 	display: inline-block;
 	border: 3px solid green;
@@ -75,7 +75,7 @@ p {
 
 .littlebluebox {
 	height: 25px;
-	background-color: #bdc3c7;
+	background-color: rgba(22, 160, 133, 0.49);
 	width: 20px;
 	display: inline-block;
 	border: 3px solid blue;
@@ -84,7 +84,7 @@ p {
 
 .littlepurplebox {
 	height: 25px;
-	background-color: #bdc3c7;
+	background-color: rgba(22, 160, 133, 0.49);
 	width: 20px;
 	display: inline-block;
 	border: 3px solid purple;
@@ -93,7 +93,7 @@ p {
 
 .littleblackbox {
 	height: 25px;
-	background-color: #bdc3c7;
+	background-color: rgba(22, 160, 133, 0.49);
 	width: 20px;
 	display: inline-block;
 	border: 3px solid black;
@@ -102,7 +102,7 @@ p {
 
 .littleskybluebox {
 	height: 25px;
-	background-color: #bdc3c7;
+	background-color: rgba(22, 160, 133, 0.49);
 	width: 20px;
 	display: inline-block;
 	border: 3px solid skyblue;
@@ -226,6 +226,15 @@ p {
 
 .butsky {
 	background-color: skyblue;
+}
+
+.nopad {
+	padding: 0;
+}
+
+.colorbuttons {
+	position: relative;
+	top: 25px;
 }
 
 
