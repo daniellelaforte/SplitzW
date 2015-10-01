@@ -1,13 +1,23 @@
 * { box-sizing: border-box } 
 
 body {
-	background-color: #16a085
+	background-color: rgba(17, 180, 148, 0.63);
+	color: #2c3e50;
+	font-family: courier;
+}
+
+p {
+	text-align: center;
 }
 
 .backinput {
-	background-color: #bdc3c7;
+	background-color: #ecf0f1;
 	color: #7f8c8d;
 	border: 1px solid black;
+}
+
+.centerz {
+	text-align: center;
 }
 
 .headline {
@@ -15,151 +25,168 @@ body {
 	font-size: 60px;
 	font-family: verdana;
 	font-weight: bold;
+	text-align: center;
 }
 
 .inputbutton {
 	color: #7f8c8d;
 	border: 1px solid black;
-	background-color: #bdc3c7
+	background-color: #ecf0f1;
 }
 
 .morevisible {
 	color: black;
 }
 .littleredbox {
-	height: 20px;
-	background-color: #34495e;
-	width: 20px;
+	height: 25px;
+	background-color: rgba(52, 73, 94, 0.76);
+	width: 25px;
 	display: inline-block;
-	border: 2px solid red;
+	border: 3px solid red;
+	border-radius: 5px;
 }
 
 .littleorangebox {
-	height: 20px;
-	background-color: #34495e;
-	width: 20px;
+	height: 25px;
+	background-color: rgba(52, 73, 94, 0.76);
+	width: 25px;
 	display: inline-block;
-	border: 2px solid orange;
+	border: 3px solid orange;
+	border-radius: 5px;
 }
 
 .littleyellowbox {
-	height: 20px;
-	background-color: #34495e;
-	width: 20px;
+	height: 25px;
+	background-color: rgba(52, 73, 94, 0.76);
+	width: 25px;
 	display: inline-block;
-	border: 2px solid yellow;
+	border: 3px solid yellow;
+	border-radius: 5px;
 }
 
 .littlegreenbox {
-	height: 20px;
-	background-color: #34495e;
-	width: 20px;
+	height: 25px;
+	background-color: rgba(52, 73, 94, 0.76);
+	width: 25px;
 	display: inline-block;
-	border: 2px solid green;
+	border: 3px solid green;
+	border-radius: 5px;
 }
 
 .littlebluebox {
-	height: 20px;
-	background-color: #34495e;
-	width: 20px;
+	height: 25px;
+	background-color: rgba(52, 73, 94, 0.76);
+	width: 25px;
 	display: inline-block;
-	border: 2px solid blue;
+	border: 3px solid blue;
+	border-radius: 5px;
 }
 
 .littlepurplebox {
-	height: 20px;
-	background-color: #34495e;
-	width: 20px;
+	height: 25px;
+	background-color: rgba(52, 73, 94, 0.76);
+	width: 25px;
 	display: inline-block;
-	border: 2px solid purple;
+	border: 3px solid purple;
+	border-radius: 5px;
 }
 
 .littleblackbox {
-	height: 20px;
-	background-color: #34495e;
-	width: 20px;
+	height: 25px;
+	background-color: rgba(52, 73, 94, 0.76);
+	width: 25px;
 	display: inline-block;
-	border: 2px solid black;
+	border: 3px solid black;
+	border-radius: 5px;
 }
 
 .littleskybluebox {
-	height: 20px;
-	background-color: #34495e;
-	width: 20px;
+	height: 25px;
+	background-color: rgba(52, 73, 94, 0.76);
+	width: 25px;
 	display: inline-block;
-	border: 2px solid skyblue;
+	border: 3px solid skyblue;
+	border-radius: 5px;
 }
 
 
 .lightred {
-	height: 20px;
+	height: 25px;
 	background-color: red;
-	width: 20px;
+	width: 25px;
 	display: inline-block;
+	border-radius: 5px;
 	/*opacity: 0.2;*/
 	/*border: 2px solid black;*/
 }
 
 .lightorange {
-	height: 20px;
+	height: 25px;
 	background-color: orange;
-	width: 20px;
+	width: 25px;
 	display: inline-block;
+	border-radius: 5px;
 	/*opacity: 0.2;*/
 	/*border: 2px solid black;*/
 }
 
 .lightyellow {
-	height: 20px;
+	height: 25px;
 	background-color: yellow;
-	width: 20px;
+	width: 25px;
 	display: inline-block;
+	border-radius: 5px;
 	/*opacity: 0.2;*/
 /*	border: 2px solid black;*/
 }
 
 .lightgreen {
-	height: 20px;
+	height: 25px;
 	background-color: green;
-	width: 20px;
+	width: 25px;
 	display: inline-block;
+	border-radius: 5px;
 	/*opacity: 0.2;*/
 	/*border: 2px solid black;*/
 }
 
 .lightblue {
-	height: 20px;
+	height: 25px;
 	background-color: blue;
-	width: 20px;
+	width: 25px;
 	display: inline-block;
+	border-radius: 5px;
 	/*opacity: 0.2;*/
 	/*border: 2px solid black;*/
 
 }
 
 .lightpurple {
-	height: 20px;
+	height: 25px;
 	background-color: purple;
-	width: 20px;
+	width: 25px;
 	display: inline-block;
+	border-radius: 5px;
 	/*opacity: 0.2;*/
 	/*border: 2px solid black;*/
 }
 
 .lightblack {
-	height: 20px;
+	height: 25px;
 	background-color: black;
-	width: 20px;
+	width: 25px;
 	display: inline-block;
+	border-radius: 5px;
 	/*opacity: 0.2;*/
 	/*border: 2px solid black;*/
 }
 
 .lightskyblue {
-	height: 20px;
+	height: 25px;
 	background-color: skyblue;
-	width: 20px;
+	width: 25px;
 	display: inline-block;
+	border-radius: 5px;
 	/*opacity: 0.2;*/
 	/*border: 2px solid black;*/
 }

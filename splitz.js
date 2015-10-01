@@ -2,7 +2,7 @@ angular.module("bear", []);
 
 angular.module("bear").controller("polarbearcontroller", ["$scope", function($scope){
 	$scope.message = "Add another price";
-	$scope.prices=[{amt:"Enter Amount", color:""}]
+	$scope.prices=[{amt:"", color:""}]
 	$scope.totals={};
 	$scope.sum=0;
 	$scope.bug=[];
@@ -48,7 +48,7 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
 		$scope.purpletotal1 = false;
 		$scope.blacktotal1 = false;
 		$scope.skybluetotal1 = false;
-		$scope.prices=[{amt:"Enter Amount", color:""}]
+		$scope.prices=[{amt:"", color:""}]
 		$scope.totals={};
 		$scope.sum=0;
 		$scope.bug=[];
@@ -68,7 +68,7 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
 		$scope.purple[0]=1000;
 		$scope.black[0]=1000;
 		$scope.skyblue[0]=1000;
-		$scope.tax = 0;
+		$scope.tax = "";
     }
 	
 	$scope.Submit = function() {
@@ -319,7 +319,7 @@ angular.module("bear").controller("polarbearcontroller", ["$scope", function($sc
 	}
 	
 	var Priceobj = function () {
-		this.amt = "Enter Amount";
+		this.amt = "";
 		this.color = "";
 	}	
 
